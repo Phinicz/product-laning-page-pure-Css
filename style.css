@@ -5,6 +5,9 @@ html{
     margin: 0;
     padding: 0;
 }
+button:hover{
+    cursor: pointer;
+}
 nav{
     display: flex;
     position: fixed;
@@ -174,8 +177,38 @@ nav > .shopcart{
     font-weight: 700;
     font-size: 20px;
 }
-.box{
-    width: 200px;
-    height: 200px;
-    background-color: green;
+.sideBarContainer{
+    display: flex;
+}
+.sideBar{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 150px;
+    height: 100vh;
+    background-color: white;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    
+}
+.sideBar > .m_btn{
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    
+}
+.sideBarRemover{
+    width: calc(100vw - 150px);
+    height: 100vh;
+    border:0;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    left: 150px;
+    z-index: 20; 
 }
